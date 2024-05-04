@@ -1,2 +1,2 @@
 # Web-proje
-memleketimi anlatan web sitesi
+memleketimi ilgi alanlarımı anlatan bir web sayfası yapma ödevi
