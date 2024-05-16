@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -9,25 +9,40 @@
             .navbar{
                justify-content: center;
             }
+            .icerik{
+               display: flex;
+               margin: auto;
+               margin-top: 10%;
+            }
             .sag_rsm{
-                width: 15%;
-                margin:  auto;
+                width: 23%;
                 text-align: center;
             }
             .sol_rsm{
-                width: 15%;
-                margin:  auto;
+                width: 23%;
                 text-align: center;
             }
+            img{
+                width: 90%;
+                height: 4.2%;
+            }
+            figure img{
+                height: 6%;
+            }
+            .sag_rsm p{
+                color: rgb(255, 255, 255);
+            }
+            .sol_rsm p{
+                color: rgb(255, 255, 255);
+            }
+            .yazısınırları{
+                width: 54%;
+            }
             .yazı{
-                width: 50%;
-                margin-top: 50px;
+                background-color: aliceblue;
+                margin: auto;
             }
-            .icerik{
-                margin-top: 5%;
-                display: flex;
-                background-color: aliceblue
-            }
+           
             p{
                text-indent: 20px;
                 font-size: 15pt;
@@ -35,16 +50,30 @@
             }
             .oyuncular p{
                 white-space: pre-line;
-                margin-left: 20pt;
-                text-indent: 0
+                margin-left: 40pt;
+                text-indent: 0;
+                background-color: aliceblue;
+                text-align: center;
+                margin-right: 40pt;
             }
             h4{
                 font-weight:normal ;
+                background-color: aliceblue;
+                text-align: center;
+                background-size: contain;
+            }
+            h2{
+                background-color: aliceblue;
+                text-align: center;
             }
             body{
                 background-size: contain;
-                background-repeat: 1;
+                background-repeat: 0;
                 background-attachment: fixed;
+                background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20230616/pngtree-soccer-field-in-a-3d-rendered-stadium-image_3633766.jpg);
+            }
+            h1{
+                text-align: center;
             }
         </style>
     </head>
@@ -74,59 +103,103 @@
             </div>
         </nav>
         <div class="icerik">
-            <div class="sag_rsm">
-                <img src="https://www.formayaptirma.net/wp-content/uploads/2016/05/Milli-Takim-Formasi.jpg" width="90%" height="3%" alt="Formalar">
+            <aside class="sag_rsm">
+                <figure>
+                    <img src="https://www.formayaptirma.net/wp-content/uploads/2016/05/Milli-Takim-Formasi.jpg" width="100%"alt="Formalar">
                 <p>Formalar</p>
-            </div>
-            <div class="yazı">
-                <h1>Türkiye Milli Futbol Takımı</h1>
+                </figure>
+                <br><br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRuGT1XsmuMMFuZn8dQq19W5yPooZxmWII5h_ZSwiTzQ&s"alt="Uğurcan Çakır">
+                <p>Uğurcan Çakır</p>
                 <br>
-                <p><strong>Kuruluş tarihi:</strong> Türk sporunun ilk teşkilatı olan Türk İdman Cemiyetleri İttifakının kurulmasının ardından Yusuf Ziya Öniş başkanlığında ilk Türk Futbol Federasyonu 1923 yılında Şehzadebaşı'ndaki Letâfet Apartmanı salonunda yapılan toplantıda "Futbol Hey'et-i Müttehidesi" adıyla kurulmuştur. Ardından FIFA'ya başvurulmuş ve Türkiye 21 Mayıs 1923 tarihinde FIFA'nın 26. üyesi olmuştur. </p>
-                <p><strong>Teknik Direktör:</strong> Vincenzo Montella</p>
+                <img src="https://image.hurimg.com/i/hurriyet/75/750x422/63049c524e3fe02a74555ce3.jpg" alt=" Cenk Özkacar">
+                <p>Cenk Özkacar</p>
                 <br>
-                <h2>Oyuncular</h2>
-                <hr>
+                <img src="https://tmssl.akamaized.net/images/foto/galerie/kaan-ayhan-galatasaray-2023-24-1702817005-124181.jpg?lm=1702817019" alt="Kaan Ayhan">
+                <p>Kaan Ayhan</p>
+                <br>
+                <img src="https://www.trtspor.com.tr/resimler/320000/320822.jpg" alt="Merih Demiral">
+                <p>Merih Demiral</p>
+                <br>
+                <img src="https://tmssl.akamaized.net/images/foto/galerie/mert-muldur-turkei-1624275378-65705.jpg?lm=1624275386" alt="Mert Müldür">
+                <p>Mert Müldür</p>
+                <br>
+                <img src="https://gsgazetecom.teimg.com/crop/1280x720/gsgazete-com/uploads/2023/09/hakan-emre.jpg" alt="Hakan Çalhanoğlu(Kaptan)">
+                <p>Hakan Çalhanoğlu(Kaptan)</p>
+                <br>
+                <img src="https://trthaberstatic.cdn.wp.trt.com.tr/resimler/1840000/salih-ozcan-aa-1841104.jpg" alt="Salih Özcan">
+                <p>Salih Özcan</p>
+                <br>
+                <img src="https://imgscdn.stargazete.com/imgsdisk/2022/11/17/kerem-akturkoglu-milli-ta-602_2-41.jpg" alt="Kerem Aktürkoğlu">
+                <p>Kerem Aktürkoğlu</p>
+                <br>
+                <img src="https://trthaberstatic.cdn.wp.trt.com.tr/resimler/1952000/arda-guler-aa-1953228.jpg" alt="Arda Güler">
+                <p>Arda Güler</p>
+                <br>
+                <img src="https://img3.aksam.com.tr/imgsdisk/2022/11/17/t25_irfan-can-kahveci-ve-orku-215.jpg" alt="İrfan Can Kahveci">
+                <p>İrfan Can Kahveci</p>
+                <br>
+                <img src="https://cdn1.ntv.com.tr/gorsel/VLRF3_G7xkCgJ99HSAeG7Q.jpg?width=952&height=540&mode=both&scale=both" alt="Kenan Yıldız">
+                <p>Kenan Yıldız</p>
+            </aside>
+            <div class="yazısınırları">
+                <div class="yazı">
+                    <h1>Türkiye Milli Futbol Takımı</h1>
+                    <br>
+                    <p><strong>Kuruluş tarihi:</strong> Türk sporunun ilk teşkilatı olan Türk İdman Cemiyetleri İttifakının kurulmasının ardından Yusuf Ziya Öniş başkanlığında ilk Türk Futbol Federasyonu 1923 yılında Şehzadebaşı'ndaki Letâfet Apartmanı salonunda yapılan toplantıda "Futbol Hey'et-i Müttehidesi" adıyla kurulmuştur. Ardından FIFA'ya başvurulmuş ve Türkiye 21 Mayıs 1923 tarihinde FIFA'nın 26. üyesi olmuştur. </p>
+                    <p><strong>Teknik Direktör:</strong> Vincenzo Montella</p>
+                </div>
                 <div class="oyuncular">
+                    <h2>Oyuncular</h2>
+                    <hr>
                     <h4><strong>Kaleci:</strong> Uğurcan Çakır</h4>
-                    <p>Doğum Tarihi: 05/04/1996 (28)
-                        Doğum Yeri: Antalya
-                        Takıma Katılma Tarihi: 03/10/2014
-                        Güncel Kulüp: Trabzonspor
-                        Mevki: Kaleci
-                    </p>
-                    <br>
+                        <p>Doğum Tarihi: 05/04/1996 (28)
+                            Doğum Yeri: Antalya
+                            Takıma Katılma Tarihi: 03/10/2014
+                            Güncel Kulüp: Trabzonspor
+                            Mevki: Kaleci
+                        </p>
+                </div>
+
+                <br>
+
+                <div class="oyuncular">
                     <h4><strong>Stoper: </strong>Cenk Özkacar</h4>
-                    <p>Doğum Tarihi: 06/10/2000 (23)
-                        Doğum Yeri: İzmir
-                        Takıma Katılma Tarihi: 01/07/2023
-                        Güncel Kulüp: Valencia
-                        Mevki: Stoper / Sol Bek
-                    </p>
-                    <br>
+                        <p>Doğum Tarihi: 06/10/2000 (23)
+                            Doğum Yeri: İzmir
+                            Takıma Katılma Tarihi: 01/07/2023
+                            Güncel Kulüp: Valencia
+                            Mevki: Stoper / Sol Bek
+                        </p>
+                </div>
+
+                <br>
+
+                <div class="oyuncular">
                     <h4><strong>Sağ Bek: </strong>Kaan Ayhan</h4>
-                    <p>Doğum Tarihi: 10/11/1994 (29)
-                        Doğum Yeri: Gelsenkirchen(Almanya)
-                        Takıma Katılma Tarihi: 01/07/2023
-                        Güncel Kulüp: Galatasaray
-                        Mevki: Sağ Bek / Ön Libero / Stoper
-                    </p>
-                    <br>
-                    <h4><strong>Stoper: </strong>Cenk Özkacar</h4>
-                    <p>Doğum Tarihi: 05/04/1996 (28)
-                        Doğum Yeri: Antalya
-                        Takıma Katılma Tarihi: 03/10/2014
-                        Güncel Kulüp: Trabzonspor
-                        Mevki: Stoper/Sol Bek
-                    </p>
-                    <br>
+                        <p>Doğum Tarihi: 10/11/1994 (29)
+                            Doğum Yeri: Gelsenkirchen(Almanya)
+                            Takıma Katılma Tarihi: 01/07/2023
+                            Güncel Kulüp: Galatasaray
+                            Mevki: Sağ Bek / Ön Libero / Stoper
+                        </p>
+                </div>
+
+                <br>
+
+                <div class="oyuncular">
                     <h4><strong>Stoper: </strong>Merih Demiral</h4>
-                    <p>Doğum Tarihi: 05/05/1998 (26)
-                        Doğum Yeri: Kocaeli
-                        Takıma Katılma Tarihi: 19/08/2023
-                        Güncel Kulüp: Al-Ahli SFC
-                        Mevki: Stoper
-                    </p>
-                    <br>
+                        <p>Doğum Tarihi: 05/05/1998 (26)
+                            Doğum Yeri: Kocaeli
+                            Takıma Katılma Tarihi: 19/08/2023
+                            Güncel Kulüp: Al-Ahli SFC
+                            Mevki: Stoper
+                        </p>
+                </div>
+
+                <br>
+                
+                <div class="oyuncular">
                     <h4><strong>Sağ Bek: </strong>Mert Müldür</h4>
                     <p>Doğum Tarihi: 03/04/1999 (25)
                         Doğum Yeri: Wien(Avusturya)
@@ -134,23 +207,35 @@
                         Güncel Kulüp: Fenerbahçe
                         Mevki: Sağ Bek / Stoper / Sol Bek
                     </p>
-                    <br>
+                </div>
+
+                <br>
+                
+                <div class="oyuncular">
                     <h4><strong>Ön Libero: </strong>Hakan Çalhanoğlu(Kaptan)</h4>
-                    <p>Doğum Tarihi: 08/02/1994 (30)
-                        Doğum Yeri: Mannheim(Almanya)
-                        Takıma Katılma Tarihi: 01/07/2021
-                        Güncel Kulüp: Inter
-                        Mevki: Ön Libero / Merkez Orta Saha / On Numara
-                    </p>
-                    <br>
+                        <p>Doğum Tarihi: 08/02/1994 (30)
+                            Doğum Yeri: Mannheim(Almanya)
+                            Takıma Katılma Tarihi: 01/07/2021
+                            Güncel Kulüp: Inter
+                            Mevki: Ön Libero / Merkez Orta Saha / On Numara
+                        </p>
+                </div>
+
+                <br>
+                
+                <div class="oyuncular">
                     <h4><strong>Ön Libero: </strong>Salih Özcan</h4>
-                    <p>Doğum Tarihi: 11/01/1998 (26)
-                        Doğum Yeri: Köln(Almanya)
-                        Takıma Katılma Tarihi: 01/07/2022
-                        Güncel Kulüp: Borussia Dortmund
-                        Mevki: Ön Libero / Merkez Orta Saha
-                    </p>
-                    <br>
+                        <p>Doğum Tarihi: 11/01/1998 (26)
+                            Doğum Yeri: Köln(Almanya)
+                            Takıma Katılma Tarihi: 01/07/2022
+                            Güncel Kulüp: Borussia Dortmund
+                            Mevki: Ön Libero / Merkez Orta Saha
+                        </p>
+                </div>
+
+                <br>
+                
+                <div class="oyuncular">
                     <h4><strong>Sol Kanat: </strong>Kerem Aktürkoğlu</h4>
                     <p>Doğum Tarihi: 21/10/1998 (25)
                         Doğum Yeri: Kocaeli
@@ -158,22 +243,35 @@
                         Güncel Kulüp: Galatasaray
                         Mevki: Sol Kanat / Sağ Kanat / Forvet Arkası
                     </p>
-                    <br>
+                </div>
+
+                <br>
+                
+                <div class="oyuncular">
                     <h4><strong>On Numara: </strong>Arda Güler</h4>
-                    <p>Doğum Tarihi: 25/02/2005 (19)
-                        Doğum Yeri: Ankara
-                        Takıma Katılma Tarihi: 06/07/2023
-                        Güncel Kulüp: Real Madrid
-                        Mevki: On Numara / Sağ Kanat / Merkez Orta Saha
-                    </p>
-                    <br>
+                        <p>Doğum Tarihi: 25/02/2005 (19)
+                            Doğum Yeri: Ankara
+                            Takıma Katılma Tarihi: 06/07/2023
+                            Güncel Kulüp: Real Madrid
+                            Mevki: On Numara / Sağ Kanat / Merkez Orta Saha
+                        </p>
+                </div>
+
+                <br>
+                
+                <div class="oyuncular">
                     <h4><strong>Sağ Kanat: </strong>İrfan Can Kahveci</h4>
-                    <p>Doğum Tarihi: 15/07/1995 (28)
-                        Doğum Yeri: Çorum
-                        Takıma Katılma Tarihi: 31/01/2021
-                        Güncel Kulüp: Fenerbahçe
-                        Mevki: Sağ Kanat / On Numara / Merkez Orta Saha
-                    </p>
+                        <p>Doğum Tarihi: 15/07/1995 (28)
+                            Doğum Yeri: Çorum
+                            Takıma Katılma Tarihi: 31/01/2021
+                            Güncel Kulüp: Fenerbahçe
+                            Mevki: Sağ Kanat / On Numara / Merkez Orta Saha
+                        </p>
+                </div>
+
+                <br>
+                
+                <div class="oyuncular">
                     <h4><strong>Forvet Arkası: </strong>Kenan Yıldız</h4>
                     <p>Doğum Tarihi: 04/05/2005 (19)
                         Doğum Yeri: Regensburg(Almanya) 
@@ -184,11 +282,51 @@
                 </div>
             </div>
             <div class="sol_rsm">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Vincenzo_Montella_ICC_2016_%28edited%29.jpg/220px-Vincenzo_Montella_ICC_2016_%28edited%29.jpg" width="70%" height="2%"alt="Vincenzo Montella">
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Vincenzo_Montella_ICC_2016_%28edited%29.jpg/220px-Vincenzo_Montella_ICC_2016_%28edited%29.jpg" width="100%" alt="Vincenzo Montella">
                 <p>Vincenzo Montella</p>
+                </figure>
+                <br><br>
+                <img src="https://www.trtspor.com.tr/resimler/454000/454303.jpg" alt="Uğurcan Çakır">
+                <p>Uğurcan Çakır</p>
+                <br>
+                <img src="https://cdnuploads.aa.com.tr/uploads/Contents/2022/08/24/thumbs_b_c_897e63ef98e74876856d649a493157a0.jpg?v=091424" alt=" Cenk Özkacar">
+                <p>Cenk Özkacar</p>
+                <br>
+                <img src="https://image.hurimg.com/i/hurriyet/75/0x0/63d582de4e3fe026e0d55b92.jpg" alt="Kaan Ayhan">
+                <p>Kaan Ayhan</p>
+                <br>
+                <img src="https://i.haberglobal.com.tr/storage/files/images/2023/08/25/merih-demiralin-suudi-arabistan-macerasi-galibiyetle-basladi-nPXK.jpg" alt="Merih Demiral">
+                <p>Merih Demiral</p>
+                <br>
+                <img src="https://media05.ligtv.com.tr/img/news/2023/11/26/joshua-king-dondu-mert-muldur-ilk-kez-11de/748_416/mert.jpg" alt="Mert Müldür">
+                <p>Mert Müldür</p>
+                <br>
+                <img src="https://www.trtspor.com.tr/resimler/474000/475292.jpg" alt="Hakan Çalhanoğlu(Kaptan)">
+                <p>Hakan Çalhanoğlu(Kaptan)</p>
+                <br>
+                <img src="https://tmssl.akamaized.net/images/foto/galerie/salih-ozcan-bvb-2022-23-1662298814-91661.jpg?lm=1662298876" alt="Salih Özcan">
+                <p>Salih Özcan</p>
+                <br>
+                <img src="https://www.gazetegercek.com.tr/images/haberler/2024/05/kerem-akturkoglu-nun-yeni-adresi-sasirtacak-7511.jpg" alt="Kerem Aktürkoğlu">
+                <p>Kerem Aktürkoğlu</p>
+                <br>
+                <img src="https://tmssl.akamaized.net//images/foto/galerie/arda-guler-real-madrid-2023-2024-1711029152-132371.jpg" alt="Arda Güler">
+                <p>Arda Güler</p>
+                <br>
+                <img src="https://cdnuploads.aa.com.tr/uploads/Contents/2023/10/25/thumbs_b_c_a44edeef14c4342c349efac4db47b553.jpg" alt="İrfan Can Kahveci">
+                <p>İrfan Can Kahveci</p>
+                <br>
+                <img src="https://media05.ligtv.com.tr/img/news/2023/11/09/kenan-yildiz-turkiye-adina-oynadigim-icin-cok-mutluyum/748_416/kenanyidiz.jpg" alt="Kenan Yıldız">
+                <p>Kenan Yıldız</p>
             </div>
+            <br>
+            <br>
+            <br>
         </div>
-
+        <br>
+        <br>
+        <br>
   
     </body>
 </html>
