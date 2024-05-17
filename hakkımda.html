@@ -9,13 +9,24 @@
             .navbar{
                justify-content: center;
             }
+            .navbar-nav .nav-link.active {
+                 text-decoration: underline;
+            }
+            .navbar-nav .nav-link:hover {
+                color: rgb(0, 242, 255);
+            }
             .slaytlar{
                 width: 60%;
-                height: 50%;
+                height: 60%;
                 margin: auto;
             }
+            
             body{
-                background-color: rgba(157, 208, 253, 0.332);
+                background-image: url(https://st3.depositphotos.com/6171310/37268/v/950/depositphotos_372688856-stock-illustration-beautiful-wallpaper-splash-watercolor-multicolor.jpg);
+                background-attachment: fixed;
+                background-repeat: 0;
+                background-size: cover;
+                color: rgb(0, 0, 0);
             }
             h1{
                 text-align: center;
@@ -38,7 +49,7 @@
            <div class="içerik">
                <ul class="navbar-nav">
                 <li class="item">
-                    <a class="nav-link" href="hakkımda.html">Hakkımda</a>
+                    <a class="nav-link active" href="hakkımda.html">Hakkımda</a>
                 </li>
                    
                     <li class="item">
@@ -53,6 +64,9 @@
                     <li class="item">
                         <a class="nav-link" href="özgeçmiş.html">Özgeçmiş</a>
                     </li>
+                    <li class="item">
+                        <a class="nav-link" href="üye_ol.html">Üye ol</a>
+                    </li>
                 </ul>
             </div>
             
@@ -63,23 +77,24 @@
             <p id="tanıtım">
                 Adım Nisanur Çıkrıkcı Kartal Anadolu İmam Hatip lisesinden mezun oldum şimdi Skarya Üniversitesinde 1.sınıf öğrencisiyim. İstanbul kadıköy de doğdum ve İstanbul tuzla da ailem ile birlikte yaşıyorum. 19 yaşındayım. 3 Tane kardeşim var en büyükleri benim. Şuan okul dolayısıyla Sakarya da özel bir yurtta kalıyorum.
             </p>
-            <h6>Hobiler</h6>
-           <ul>
-            <li>Arkadaşlarımla oyun oynamak</li>
-            <li>Sinemaya gitmek</li>
-            <li>Anime izlemek</li>
-            <li>Kitap okumak</li>
-            <li>Webtoon okumak</li>
-           </ul>
+            <br><br>
+            <h2>Hobiler</h2>
+            <ul>
+                <li>Arkadaşlarımla oyun oynamak</li>
+                <li>Sinemaya gitmek</li>
+                <li>Anime izlemek</li>
+                <li>Kitap okumak</li>
+                <li>Webtoon okumak</li>
+            </ul>
             <div class="slaytlar">
-                <div id="carouselExampleIndicators" class="carousel slide ">
+                <div id="slayt1" class="carousel slide ">
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#slayt1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#slayt1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#slayt1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#slayt1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#slayt1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#slayt1" data-bs-slide-to="5" aria-label="Slide 6"></button>
                     </div>
                     <div class="carousel-inner" >
                         <div class="carousel-item active">
@@ -107,22 +122,107 @@
                         </div>
                     </div>
                     
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#slayt1" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                     </button>
                         
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#slayt1" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                     </button>
                 </div>
             </div>
-            <h6>Spor</h6>
-        </div>
+            <br>
+            <br>
+            <h2>Spor</h2>
+            <ul>
+                <li>Taekwondo</li>
+                <li>Basketbol oynamak</li>
+                
+            </ul>
+            <div class="slaytlar">
+                <div id="slayt2" class="carousel slide ">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#slayt2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#slayt2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        
+                    </div>
+                    <div class="carousel-inner" >
+                        <div class="carousel-item active">
+                            <img src="https://altinova.bel.tr/upload/kurslar/2022_12_26-cZmKw1az59fyAETQjHkg.jpg"class="slayt " width="100%" height="100%" alt="...">
+                        </div>
+                            
+                        <div class="carousel-item">
+                            <img src="https://sozcu01.sozcucdn.com/sozcu/production/uploads/images/2024/1/basketbolgenelgorseljpg-xSdOhnl0NECYaWdE0Cwr-A.jpg?w=776&h=436&mode=crop&scale=both" class="slayt" width="100%" height="100%" alt="...">
+                        </div>
+                       
+                    </div>
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#slayt2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                    </button>
+                        
+                    <button class="carousel-control-next" type="button" data-bs-target="#slayt2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <h2>Müzik</h2>
+            <ul>
+                <li>Exo</li>
+                <li>Seventeen</li>
+                <li>Blackpink</li>
+                <li>Manga</li>
+                <li>Duman</li>
+            </ul>
+            <div class="slaytlar">
+                <div id="slayt3" class="carousel slide ">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#slayt3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#slayt3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#slayt3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#slayt3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#slayt3" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner" >
+                        <div class="carousel-item active">
+                            <img src="https://wallpapers.com/images/featured/exo-8nbjk26slfero4jz.jpg"class="slayt " width="100%" height="100%" alt="...">
+                        </div>
+                            
+                        <div class="carousel-item">
+                            <img src="https://www.rollingstone.com/wp-content/uploads/2024/04/seventeen-lead.jpg?w=1581&h=1054&crop=1" class="slayt" width="100%" height="100%" alt="...">
+                        </div>
+                            
+                        <div class="carousel-item">
+                            <img src="https://altselection.com/wp-content/uploads/2022/06/dernier-retour-blackpink-discussion.jpg"  class="slayt " width="100%"  height="100%" alt="...">
+                        </div>
+                            
+                        <div class="carousel-item">
+                            <img src="https://www.lifeinlifedergisi.com/wp-content/uploads/2020/06/manga-1024x678.jpg"  class="slayt" width="100%" height="100%" alt="...">
+                        </div>
 
-  
+                        <div class="carousel-item">
+                            <img src="https://media.bantmag.com/wp-content/uploads/2020/01/duman.jpg"  class="slayt" width="100%" height="100%" alt="...">
+                        </div>
+
+                    </div>
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#slayt3" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                    </button>
+                        
+                    <button class="carousel-control-next" type="button" data-bs-target="#slayt3" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <br>
+                
+            </div>
+        </div>
     </body>
 </html>
-Hakkında sayfası giriş sayfası niteliğinde olmalı, sayfa sahibinin kendini tanıtan bilgiler (Hobiler, 
-Etkinlikler vb ) , sevdiği spor,etkinlik vb ait resimler, linkler vb. içermelidir.

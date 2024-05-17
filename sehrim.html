@@ -15,13 +15,24 @@
                 padding: 20px;
                 overflow: auto;
                 height: 100%;
+                color: white;
             }
             .main{
                 margin-left: 15%;
                 margin-right: 15%;
                 padding: 20px;
+            }
+            .yazılar{
                 background-color: aliceblue;
-                background-size: cover;
+            }
+            .yazı{
+                margin-top: 5%;
+                margin-left: 5%;
+                margin-right: 5%;
+                margin-bottom: 5%;
+            }
+            a{
+                color: rgb(2, 247, 255);
             }
             .menü{
                 display: grid;
@@ -31,20 +42,29 @@
             }
             .navbar{
                justify-content: center;
+               color: black;
+            }
+            .navbar-nav .nav-link.active {
+                 text-decoration: underline;
+            }
+            .navbar-nav .nav-link:hover {
+                color: rgb(0, 242, 255);
             }
             .slaytlar{
                 width: 60%;
                 height: 55%;
                 margin: auto;
+                margin-top: 5%;
             }
             #kckresim{
-                width: 20%;
-                height: 5%;
+                width: 35%;
+                height: 4%;
                 margin: auto;
             }
             body{
-                background-image: url(https://www.sinop.bel.tr/sinopbelediyesi/images/sinopsitearkaplan.png);
-                background-size: contain;
+                background-image: url(https://e1.pxfuel.com/desktop-wallpaper/976/460/desktop-wallpaper-really-pretty-backgrounds-zone-backgrounds-really-pretty-backgrounds.jpg);
+                background-size: cover;
+                background-attachment: fixed;
             }
         </style>
     </head>
@@ -56,7 +76,7 @@
                         <a class="nav-link" href="hakkımda.html">Hakkımda</a>
                     </li>
                     <li class="item">
-                        <a class="nav-link" href="sehrim.html">Şehrim</a>
+                        <a class="nav-link active" href="sehrim.html">Şehrim</a>
                     </li>
                     <li class="item">
                         <a class="nav-link" href="mirasımız.html">Takımımız</a>
@@ -66,6 +86,9 @@
                     </li>
                     <li class="item">
                         <a class="nav-link" href="özgeçmiş.html">Özgeçmiş</a>
+                    </li>
+                    <li class="item">
+                        <a class="nav-link" href="üye_ol.html">Üye ol</a>
                     </li>
                 </ul>
             </div>
@@ -118,121 +141,162 @@
                 <a href="#Gezi">Gezilecek Yerler</a><br>
             </div>
             <div class="main">
-
-                <h2 id="nüfus">Nüfus</h2>
-                <p>İl nüfusu 2023 TÜİK verilerine göre 229.716'dır. İlin yüzölçümü 5.717 km²'dir. İlde  km2'ye 40 kişi düşmektedir. </p>
-                
-                <h2 id="yönetim">Yönetim</h2>
-                <p>2021 yılında TÜİK verilerine göre merkez ilçeyle beraber 9 İlçe, 9 belediye, bu belediyelerde 50 mahalle ve ayrıca 464 köy vardır.</p>
-                <p>İllerde protokolde ilk sırada yer alan Vali, merkezi yönetimi temsil eder ve Cumhurbaşkanı tarafından atanır. Büyükşehir dışındaki illerde yerel yönetim, şehirler düzeyindedir. Belediye Başkanı, belediye sınırları içinde kalan seçmenin oy çokluğu ile seçilir. Aynı seçmen İlçe Belediye Meclisi için de oy kullanarak ilçelerin belediye meclislerini oluşturur. İldeki bütün seçmenler ayrıca il genel meclisi için de oy kullanarak, İl Genel Meclisinin oluşumunu sağlarlar.</p>
-                <p> İl genel meclisi ve belediye meclisi üyelikleri için yapılan seçimlerde, onda birlik baraj uygulamalı nispi temsil sistemi, belediye başkanlığı seçiminde ise çoğunluk sistemi uygulanır İl genel meclisi ve belediye meclisi üye sayıları ilçe nüfusuna göre, kontenjandan kalan sayıların partilere dağılımı ise D'Hondt Sistemine göre belirlenir (Kanun:2972-Madde:23)</p>
-                <p>  İl Genel Meclisi, İl Özel İdaresinin karar organıdır, başkanını üyeleri arasından gizli oyla seçer. Ayrıca, İl Genel Meclisi kendi içinden gizli oyla bir yıl görev yapacak 5 kişilik İl Encümenini seçer.</p>
-                <p>Merkezi yönetim, Vali ve İl Müdürlerinden oluşur. İl Özel İdaresi (İl Genel Meclisi ve İl Encümeni) seçilmişlerden oluşur, ancak Vali başkanlığında görev yapar. Yerel yönetim ise belediye başkanları ve belediye meclislerinden oluşur.</p>
-                
-                <h2 id="coğrafya">Coğrafya</h2>
-                <p>Sinop, Karadeniz kıyı şeridinin kuzeye doğru en çok sivrilerek uzanmış bulunan Boztepe Burnu ve Yarımadası üzerinde kurulmuştur. 41 derece 12 dakika ve 42 derece 06 dakika kuzey enlemleri ile 34 derece 14 dakika ve 35 derece 26 dakika doğu boylamları arasında yer alır.</p>
-                <p>İlin yüzölçümü 5862 kilometre kare olup il bu yüz ölçümünle %0.8'ini kaplar. Batısı Kastamonu, güneyi Çorum, güneydoğusu Samsun illeri, kuzeyi ise Karadeniz ile çevrilidir. 475 km. uzunluğundaki sınırlarının 300 km'si kara, 175 km'si ise deniz kıyısıdır.</p>
-                <p>Sinop'ta temel yapıyı paleozoik yaşlı başkalaşım kayaçları oluşturur. Sinop ili genellikle sismik bakımdan aktif bölgeler dışında kalır. Ancak Durağan ve Boyabat ilçeleri I. derece deprem bölgesine girer. Kuzey Anadolu kırık çizgisi üzerinde yer alan Sinop İli genel olarak 4. derece deprem bölgesindedir. İl alanı genellikle II. Jeolojik zaman'da oluşmuştur. Yarımada, volkanik yapılıdır. Sülük Gölü eski bir volkanik kütledir.</p>
-                <p>Sinop, her zaman yağış aldığından zengin orman ve bitki örtüsüyle kaplıdır. Ormanlar hem zengin, hem de çeşitlidir. çam, köknar, meşe, gürgen, kayın, dişbudak, karaağaç ve kavak, başlıca ağaç türleridir. Ağaç denizi olarak nitelendirilen Çangal Ormanları, Ayancık, Türkeli ve Boyabat yörelerini kaplar. Dıranaz, Göktepe, Soğuksu ve Elekdağ Ormanları da hem önemli doğal güzellikler oluşturur, hem de ekonomik bakımdan büyük değer taşır.</p>
-                <p>Sinop İli'nde güneye doğru gidildikçe iklim kuraklaşmaya başlar. Bu nedenle, bu kesimde kuzeydeki gür bitki örtüsünün yerini bozkır bitkileri alır.</p>
-                <p>Sinop İli, Doğu ve Batı Karadeniz iklim özelliklerinin iç içe geçtiği bir yöredir. İlde mevsimler arası sıcaklık farkları pek büyük değildir. İl’de, yıl boyunca esen sürekli rüzgârlar etkili olmaktadır. Yazın belli bir dönem dışında, bütün yıl nemli ve yağışlı geçer. Sinop’un kuzey kesiminde Karadeniz iklim tipi egemendir. İlin güney kesiminde ise kıyıya koşut olarak uzanan dağlar nedeniyle, Karadeniz ikliminin etkisi giderek azalmaktadır. Bu bölgede yağışlar ve sıcaklık düşer ve bozkır ikliminin etkileri görülür. </p>
-                
-                <h2 id="kültür">Kültür</h2>
-                
-                <h6>Halk Oyunları</h6>
-                <p>Yöre çalgıları davul, zurna, tef, bağlama, mızıka, tulumdur. Oyunlar karşılama türündedir. Yörede oynanan oyunlardan bazıları şunlardır: Ayancık Eymeleri, Ayancık Çiftetellisi, Muhtar, Karasu'da Pazar Var, Munise, Boyabat’ın Pirinci, Derelerde Kuşburnu, Boyabat Çiftetellisi, Gürcü Horonu ve Tütün’dür.</p>
-                
-                <h6>Kıyafet</h6>
-                <p>Yörede erkekler zıpka adı verilen paçaları dar, üzeri bol pantolon, üste yakasız gömlek giyerler. Gömlek üzerine salta adı verilen cepken giyilir.</p>
-                <p>Kadınlar içlerine göynek giyerler. Göyneklerin yakası nakış ile süslenmiştir. Bazı yerlerde göyneklerin etek kısmı işlenmektedir. Göynek üzerine kurtlu, fındıklı ya da altıparmak adı verilen üçetek giyilir. Alta paça adı verilen, altı ketenden ya da bürümcükten, üstü amerikan bezinden yapılan, paça kısmı işlemeli, beli uçkur ile bağlanan don giyilir. Bele yün ya da pamuktan dokunmuş kuşak bağlanır. Bunların üzerine de öne önlük takılır. Kıyafeti başlık tamamlar. Ayancık ve köylerinde başa nezgep takılır. Bazı yerlerde başa fes takılır, onun üstüne yazma, kesmeli poğaça, iç kısımlarda çember örtülür. Genel olarak ise sarı yazma bağlanır.</p>
-                
-                <h6>Gelenek</h6>
-                <p>Helesa:Sinop’a özgü önemli bir gelenek olan “Helesa” bir diğer adı ile “Sellime Çıkma”, her Ramazan ayın on beşinci gününden sonra gerçekleştirilmektedir. Helesa geleneğinin ortaya çıkışıyla ilgili yazılı kaynaklarda bulunmayan ancak dilden dile aktarılarak günümüze kadar gelmiş bir söylence bulunmaktadır.</p>
-                <p>Rivayete göre, gemilerin yelken ile çalıştığı çok eski zamanlarda bu gemilerin Karadeniz’de sığınacağı üç liman varmış. Bunlar Temmuz, Ağustos ayları ve Sinop’muş. Yani Karadeniz sadece Temmuz ve Ağustos aylarında fırtınasız olur, diğer zamanlarda da gemiler ancak Sinop limanında barınabilirmiş. Yine böyle fırtınalı bir kış gününde, yelkenli bir gemi fırtınaya yakalanmış ve Sinop limanına sığınmış. Haftalarca burada mahsur kalan gemide bulunan tayfaların zamanla kumanyası tükenmiş ve açlık baş göstermeye başlamış. Tayfalar dilenmek istemedikleri için de kimseden bir şey isteyememişler. Bir gün kaptanın aklına yiyecek bulmak için bir fikir gelmiş. Tayfalarına hemen bir filikayı süslemelerini söylemiş. Kaptan ve tayfalar süslenen bu filikayla ve gece olması sebebiyle ellerinde çok sayıda fenerle Sinop’a inmişler ve kent içerisinde çeşitli maniler söyleyerek dolaşıp halktan yiyecek istemişler. Bun gören halk da gemicilere çeşitli yiyecekler vermiş ve böylece gemiciler açlıktan kurtulmuşlar.</p>
-                <p>Ramazan ayındaki yardımlaşmanın boyutlarını gösteren en güzel örneklerden biri olan Helesa, bu olay sonrasında Sinop’ta her Ramazan Ayında tekrarlanan bir gelenek halini almıştır. Geleneksel uygulamada, Helesa öncesinde rivayetteki filikayı temsilen birkaç kişinin taşıyacağı büyüklükte bir kayık alınır. Bu kayık güzelce süslenir ve çevresi fenerler ya da mumlarla ışıklandırılır. İftar yapılıp oruçlar açıldıktan sonra, bir araya gelen gençler süsledikleri bu kayığı bazen omuzlarında bazen ellerinde tutarak tüm mahalleleri gezerler. Kayık her evin önünde ev sahibi tarafından görülecek bir şekilde yere konulur. Bu evlerin kapısına gelen kalabalıktan sesi güzel olan bir kişi aşağıda bir bölümü yazılı olan Helesa manilerinden bir kaçını, diğer kişiler de nakarat kısmını söyler ve bahşiş isterler. Bahşişler bir mendile sarılarak ve düştüğü yer görülsün diye mendilin ucu yakılarak yere veya kayığın içerisine atılır. Toplanan tüm bahşişler de daha sonra ihtiyaç sahiplerine dağıtılır.</p>
-                <img src="https://www.kulturportali.gov.tr/repoKulturPortali/small/31012013/250ce9aa-b9eb-49f3-8f51-22179825d7f6.JPG?format=jpg&quality=50" id="kckresim" alt="">
-                <br><br>
-                <p>Hıdırellez:Sinop'ta Hıdrellez’i kutlama geleneğinin oldukça uzun yıllara dayanan bir geçmişi olduğunu söylememiz mümkündür. Hıdrellez, yörede yazın başladığı ve tutulan dileklerin Hızır tarafından gerçekleştirildiği gün olarak kabul edilmekte, genellikle etrafında türbe veya yatır bulunduğuna inanılan ve Türbe Mevki (Yakadibi Köyü), Yenicuma Mevki (Taşmanlı ve Dizdaroğlu köyleri) gibi adları olan alanlarda, geniş katılımların olduğu etkinliklerle kutlanmaktadır. Hıdrellez’in 6 Mayıs’a denk gelen gün olduğu ve yakın bir döneme kadar bugünde kutlandığı söylenmesine rağmen, günümüzde kutlamaların genellikle 6 Mayıs’tan sonraki hafta sonuna denk gelen günlerde gerçekleştirildiği görülmektedir. Hıdrellez’in kutlandığı alanların büyük çoğunluğunda yatır, türbe, mezar diye adlandırılan genellikle kimin yattığı bilinmeyen ama halk arasında Hızır’ın yattığına inanılan kalıntı veya mezarlar vardır. Hıdrellez günü bu mezarların ziyaret edildiğini, ziyaret sırasında başındaki veya yanındaki ağaçlara çaput bağlanması, mezar taşlarına taş yapıştırılması, adanan hayvanların mezar başlarında kesilmesi gibi pek çok geleneksel uygulamanın da gerçekleştirildiğini görmekteyiz.</p>
-                <p>Hıdrellez’in geleneğinde olan yardımlaşma, misafir ağırlama, birlikte eğlenme gibi pek çok unsuru bu şenliklerde gözlemlememiz mümkün olmaktadır. Bunun en belirgin göstergesi Hıdrellez kutlamalarının temel misafir yemeği olan keşkeğin hazırlanışı, pişirilişi ve dağıtılışı sırasında görülmektedir. Keşkek yörede tüm toplumsal uygulamalar da olduğu gibi Hıdrellez kutlamalarında da önemli bir yere sahiptir. Hıdrellez için köylerin büyük çoğunluğunda keşkeğin pişirilir ve börek, çörek gibi yiyecekler ile birlikte gelen misafirlere dağıtılır.</p>
-                <p>Yörede Hıdrellez’le ilgili birçok geleneksel uygulama bulunmaktadır. Hıdrellez bir hafta önceden karşılanmaya başlamakta pis olan eve Hızır’ın uğramayacağı inancı ile evler tepeden tırnağa temizlenmektedir. Ayrıca Hıdrellez Günü giyilecek elbiselerin mutlaka temiz ve eğer mümkün ise yeni olmasına özen gösterilmektedir. Hıdrellez gününü de içine alan yedi gün süresince tarla, bağ ve bahçelerde çalışılmaması gerektiğine, özellikle Hıdrellez günü çalışılırsa başa bir felaket geleceğine inanılmaktadır. Hıdrellez gecesi yıkanılmaması gerektiğine, yıkanılırsa yüzde ve vücutta belirli lekeler çıkacağına inanılmaktadır. Hıdrellez’e özgü çıkarım adı verilen börekler bugünde yapılarak misafirlere dağıtılmaktadır. Hıdrellez’de türbe ziyaretleri sırasında isteklerinin kabul olması için adanan adaklar, isteklerin gerçekleşmesi durumunda bir sonraki Hıdrellez günü türbe başında kesilmektedir. Yörede Hıdrellez günü mutlaka olması gereken yiyeceklerden birisi kestanenin suda pişirilip 1-1,5 metrelik bir ipe dizilmesi ile hazırlanan ve dizin kestane ismi verilen yiyecektir. Hıdrellez sabahı namazdan önce demirden yapılmış bir aracın belirli bir zaman elle tutulması durumunda o gün yılan görülmeyeceğine inanılır. Hıdrellez’de yumurtalar boyanmakta ve yumurtalar tokuşturulmaktadır. Hıdrellez’de yaş ağaç kesilmemektedir. Hıdrellez’den bir gece önce süt ve maya ayrı kaplarda yan yana koyulur ve yatılır. Sabah süt yoğurt haline gelmişse Hızır’ın oraya uğradığına inanılır.</p>
-                <img src="https://www.sinopflashaber.com/images/haberler/2024/05/turkeli-de-hidirellez-senligi-duzenlendi-4859.webp" id="kckresim" alt="">
-                <br><br>
-                <h6>El Sanatları</h6>
-                <p>Mahrama:Eskiden havlu veya bel kuşağı olarak olarak kullanılmak üzere ince ve uzun bir şekilde (ortalama 45x100 cm) pamuk ipinden yapılan bir dokumadır. Durağan ve Boyabat ilçelerinde yaygın olarak yapılan bu dokumada diğer dokumalara göre daha sık iplik atılır ve örtünün iki ucuna yöresel motifler yerleştirilir.</p>
-                <img src="https://www.kulturportali.gov.tr/repoKulturPortali/small/19092014/eafc7f7f-35e6-4bea-b1fd-c9c1e353e982.JPG?format=jpg&quality=50" id="kckresim" alt="">
-                <br><br>
-                <p>Peşkir:Geçmişte el yüz havlusu olarak işlev gören peşkirler, mahramayla aynı teknikte dokunmaktadır. Mahramadan farklı olarak daha ince olarak dokunan peşkirlerde işleme tekniği olarak, düz sarma, verev sarma, balık sırtı, düz pesent, verev pesent, gözeme ve civankaşı kullanılmıştır.</p>
-                <img src="https://www.kulturportali.gov.tr/repoKulturPortali/small/19092014/8b48c7c5-6a5e-4f14-8772-ae07f9802a46.jpg?format=jpg&quality=50" id="kckresim" alt="">
-                <br><br>
-                <h2 id="Yemek">Yemek</h2>
-                <ul>
-                    
-                  <li>Sinop Mantısı</li>
-                  <img src="https://res.cloudinary.com/turna/image/upload/v1671646324/sinop_mant%C4%B1.jpg" id="kckresim"  alt="">
-                  <br>
-                  <br>
-        
-                  <li>Nokul</li>
-                  <img src="https://res.cloudinary.com/turna/images/f_auto,q_auto:low/v1671646325/sinop_nokul/sinop_nokul.jpg?_i=AA"id="kckresim"  alt="">
-                  <br><br>
-                  <li>Keşkek</li>
-                  <img src="https://res.cloudinary.com/turna/image/upload/v1671646325/sinop_ke%C5%9Fkek.jpg"id="kckresim"  alt="">
-                  <br><br>
-                  <li>Kaşık Çıkartması (Mamalika)</li>
-                  <img src="https://res.cloudinary.com/turna/image/upload/v1671646324/ka%C5%9F%C4%B1k_%C3%A7%C4%B1kartmas%C4%B1.jpg"id="kckresim"  alt="">
-                 <br><br>
-                  <li>Sirkeli Pırasa</li>
-                  <img src="https://res.cloudinary.com/turna/image/upload/v1671646325/sirkeli_p%C4%B1rasa.jpg" id="kckresim" alt="">
-                  <br><br>
-                </ul>
-            </div>
-            <div class="main">
-                <h2 id="Gezi">Gezilecek Yerler</h2>
+                <div class="yazılar">
+                    <div class="yazı">
+                        <br>
+                        <h2 id="nüfus">Nüfus</h2>
+                        <p>İl nüfusu 2023 TÜİK verilerine göre 229.716'dır. İlin yüzölçümü 5.717 km²'dir. İlde  km2'ye 40 kişi düşmektedir. </p>
+                        <br>
+                    </div>
+                </div>
                 <br>
-                <ul>
-                    <li><h6>Erfelek Tatlıca Şelaleleri Tabiat Parkı</h6></li>
-                    <p>Sinop'un Erfelek ilçesine bağlı Tatlıca köyü yakınlarındaki sıra şelalelerdir. Tatlıca irili ufaklı 28 ayrı şelale barındırmaktadır. Erfelek'e yaklaşık 10, Sinop'a ise 45 km uzaklıktadır. Erfelek Şelalesi, doğal bir şekilde oluşmuştur. Tarım ve Orman Bakanlığı tarafından 2011 senesinde tabiat parkı olarak ilan edilen bu şelaleler 720 dekarlık bir sahaya sahiptir.</p>
-                   <a href="https://www.kulturportali.gov.tr/turkiye/sinop/gezilecekyer/tatlica-selaleleri"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxxqv46OCIMKfSMuFQ-wt_g3E533m4PTFrtqKOTTfD3yZdec0dAw5qeGYdDg&s" id="kckresim" alt=""></a>
-                    <br><br>
-                    <li><h6>Hamsilos Koyu</h6></li>
-                    <p>Hamsilos Tabiat Parkı; Parka adını veren denizin bir nehir gibi kara içine girdiği Karadeniz’deki ria tipi kıyı oluşumunun en güzel örneklerinden biridir. 1.Derece doğal sit alanı olup Türkiye'nin 22'nci tabiat parkıdır. Hamsilos'a halk arasında Hamsoros da denilir. Sinop'a 11 km uzaklıktadır. Türkiye'nin en kuzey noktası İnceburun'a ise yaklaşık 10 km uzaklıktadır. Akliman koyunun 1 km kuzeyindedir.  </p>
-                    <a href="https://www.kulturportali.gov.tr/turkiye/sinop/gezilecekyer/hamsilos-tabiat-parki"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/a8/9b/d4/hamsilos-koyu.jpg?w=500&h=-1&s=1" id="kckresim" alt=""></a>
-                    <br><br>
-                    <li><h6>İnceburun Feneri</h6></li>
-                    <p>Şehir merkezine yaklaşık 19km uzaklıkta olup 1863 yılında inşa edilmiştir. Denizden yüksekliği 38 metre olan fener 12 metre yüksekliğe sahiptir. İnceburun Türkiye'nin en kuzey noktasıdır.</p>
-                    <a href="https://gezimanya.com/sinop/gezilecek-yerler/inceburun-deniz-feneri"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/a8/ba/a6/inceburun-feneri.jpg?w=500&h=-1&s=1" id="kckresim" alt=""></a>
-                    <br><br>
-                    <li><h6>Sinop Arkeoloji Müzesi</h6></li>
-                    <a href="https://www.kulturportali.gov.tr/turkiye/sinop/gezilecekyer/arkeoloji-muzesi818942"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/a9/06/78/zengin-arkeolojik-miras.jpg?w=500&h=-1&s=1" id="kckresim" alt=""></a>
-                    <br><br>
-                    <li><h6>Sinop Cezaevi</h6></li>
-                    <p>Yaklaşık 4000 yıl önce Sinop Kalesi yapılmıştır. Bu kalenin cezaevi olarak kullanımına ait en eski belgeler 1568 yılına dayanmaktadır ama iç kalenin resmi olarak zindana dönmesi 1887 yılında olmuştur.</p>
-                    <p>Bu kale hakkında  Evliya Çelebi seyahatnamesinde şöyle bahsetmiştir:
-                    <br><br>
-                    "Büyük ve korkunç bir kaledir. 300 demir kapısı, dev gibi gardiyanları, kolları demir parmaklıklara bağlı ve her birinin bıyığından 10 adam asılır nice azılı mahkûmları vardır. Burçlarında gardiyanlar ejderha gibi dolaşır. Tanrı korusun, oradan mahkûm kaçırtmak değil, kuş bile uçurtmazlar."</p>
-                   <p>Sabahattin Ali ise “Duvar” adlı öyküsünde şu sözlerle anlatmıştır: <br>“Uzun zamanlar deniz kenarında ve surlar içindeki bir hapishanede kaldım. Kalın duvarlara vuran suların sesi taş oralarda çınlar ve uzak yolculuklara çağırırdı. Tüylerinden sular damlayarak surların arkasında yükseliveren deniz kuşları demir parmaklıklara hayretle gözlerini kırparak bakarlar ve hemen uzaklaşırlardı.”</p>
-                   <a href="https://www.kulturportali.gov.tr/turkiye/sinop/gezilecekyer/tarihi-cezaevi"> <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/63/18/23/eski-sinop-cezaevi.jpg?w=500&h=400&s=1" id="kckresim" alt=""></a>
-                   <br><br>
-                    <li>Boyabat Kalesi</h6></li>
-                    <p>Boyabat Kalesi, Sinop'un Boyabat ilçesinde yer alır. M.Ö. 7. yüzyılda Paflagonya'lılar tarafından yaptırılan kale, Roma, Bizans ve Osmanlı İmparatorluklarının izlerini taşımaktadır. Kaleye tırmanmak için bir kaya tünelinden toplam 252 merdiven var. Kalenin merdivenlerinin çoğu kırılmış ve çok diktir, kaleye tırmanmak isteyenler için heyecan verir.</p>
-                    <a href="https://www.kulturportali.gov.tr/turkiye/sinop/gezilecekyer/boyabat-kalesi"><img src="https://www.kulturportali.gov.tr/contents/images/17022013_0b905f6e-2093-4717-b69d-fcb00a6472f5.jpg" id="kckresim" alt=""></a>
-                    <br><br>
-                    <li><h6>İnaltı Mağarası</h6></li>
-                    <p>Ayancık İlçesi'ne 40 kilometre uzaklıkta bulunan İnaltı Köyü sınırları içerisinde olan mağara denizden 1070 metre yüksekliktedir. Mağaranın 50 metre altına kadar araçla ulaşım bulunmaktadır. Buradan da merdivenler aracılığıyla mağaranın ağzına ulaşılabilmektedir.</p>
-                    <p>MTA tarafından 1996 yılında inceleme yapılan İnaltı Mağarasının 300 metrelik bölümü aydınlatılmış olup turizme açılmıştır. Mağaranın devamındaki 358 metrelik kısmının ancak 125 metrelik bölümünün turizme açılmaya uygun olduğu tespit edilmiştir.</p>
-                    <p>Mağaranın yaşının 75 milyon olduğu yapılan arkeolojik çalışmalar ile ortaya çıkartılmıştır. Türkiye’nin en büyük on mağarası arasında yer almaktadır. </p>
-                    <a href="https://www.kulturportali.gov.tr/turkiye/sinop/gezilecekyer/nalti--magarasi"><img src="https://www.kulturportali.gov.tr/repoKulturPortali/small/24092014/db696a76-99a8-48dc-9892-fbdcdb8b5e24.JPG?format=jpg&quality=50" id="kckresim" alt=""></a>
-                   <br><br>
-                    <li><h6>Paşa Tabyaları</h6></li>
-                    <p>Yarımadanın doğusunda Karakum yolu üzerinde bulunan tabya, denizden gelebilecek tehlikelere karşı tersanenin emniyetin sağlamak ve limanda bulunan gemileri korumak amacıyla 19'uncu yüzyılda yapılmıştır. Yarım ay şeklindedir. Üstte 11 adet top yuvası bulunan yapının alt bölümünde, cephanelik ve koğuş olarak kullanılan büyük mekanlar ve mahzen vardır.</p>
-                    <a href="https://www.kulturportali.gov.tr/turkiye/sinop/gezilecekyer/pasa-tabyasi"><img src="https://www.kulturportali.gov.tr/repoKulturPortali/small/19022013/6cf2933a-3827-4612-b0d8-55079a2ac300.jpg?format=jpg&quality=50" id="kckresim" alt=""></a>
-                   <br><br>
-                    <li><h6>Bazalt Kayalıkları</h6></li>
-                    <p>Son yıllarda keşfedilen Bazalt Kayalıkları Boyabat’a 15 kilometre uzaklıkta Kurusaray Köyü civarındaki Fındıklık Mevkii'ndedir Birbirine yakın 3 vadide yer alan kayalıklar 30-40 metre yüksekliğinde olup 4-5-6 köşeli sütunlardan oluşmaktadır. Üstten bakıldığında çokgen görünümlü blok taşlar bir arı peteği şeklinde çokgen görünümlü, karşıdan bakıldığında ise yan yana dizilmiş ince uzun prizmal gövdeli blok taş yığını şeklindedir. Jeolojik oluşumu ile ilgili Maden Tetkik Araştırma Enstitüsü ve 9 Eylül Üniversitesi uzmanlarınca yapılan araştırma ve çalışmalar sonucunda genç döneme ait yaklaşık 3-5 milyon yıl yaşında olduğu sonucuna varılmıştır.</p>
-                    <a href="https://www.kulturportali.gov.tr/turkiye/sinop/gezilecekyer/bazalt-kayaliklari"><img src="https://www.kulturportali.gov.tr/repoKulturPortali/small/30092014/74c47711-c341-479d-a97b-41249f0a6b33.jpg?format=jpg&quality=50" id="kckresim" alt=""></a>
+                <div class="yazılar">
+                    <div class="yazı">
+                        <br>
+                        <h2 id="yönetim">Yönetim</h2>
+                        <p>2021 yılında TÜİK verilerine göre merkez ilçeyle beraber 9 İlçe, 9 belediye, bu belediyelerde 50 mahalle ve ayrıca 464 köy vardır.</p>
+                        <p>İllerde protokolde ilk sırada yer alan Vali, merkezi yönetimi temsil eder ve Cumhurbaşkanı tarafından atanır. Büyükşehir dışındaki illerde yerel yönetim, şehirler düzeyindedir. Belediye Başkanı, belediye sınırları içinde kalan seçmenin oy çokluğu ile seçilir. Aynı seçmen İlçe Belediye Meclisi için de oy kullanarak ilçelerin belediye meclislerini oluşturur. İldeki bütün seçmenler ayrıca il genel meclisi için de oy kullanarak, İl Genel Meclisinin oluşumunu sağlarlar.</p>
+                        <p> İl genel meclisi ve belediye meclisi üyelikleri için yapılan seçimlerde, onda birlik baraj uygulamalı nispi temsil sistemi, belediye başkanlığı seçiminde ise çoğunluk sistemi uygulanır İl genel meclisi ve belediye meclisi üye sayıları ilçe nüfusuna göre, kontenjandan kalan sayıların partilere dağılımı ise D'Hondt Sistemine göre belirlenir (Kanun:2972-Madde:23)</p>
+                        <p>  İl Genel Meclisi, İl Özel İdaresinin karar organıdır, başkanını üyeleri arasından gizli oyla seçer. Ayrıca, İl Genel Meclisi kendi içinden gizli oyla bir yıl görev yapacak 5 kişilik İl Encümenini seçer.</p>
+                        <p>Merkezi yönetim, Vali ve İl Müdürlerinden oluşur. İl Özel İdaresi (İl Genel Meclisi ve İl Encümeni) seçilmişlerden oluşur, ancak Vali başkanlığında görev yapar. Yerel yönetim ise belediye başkanları ve belediye meclislerinden oluşur.</p>
+                        <br>
+                    </div>
+                </div>
+                <br>
+                <div class="yazılar">
+                    <div class="yazı">
+                        <br><br>
+                        <h2 id="coğrafya">Coğrafya</h2>
+                        <p>Sinop, Karadeniz kıyı şeridinin kuzeye doğru en çok sivrilerek uzanmış bulunan Boztepe Burnu ve Yarımadası üzerinde kurulmuştur. 41 derece 12 dakika ve 42 derece 06 dakika kuzey enlemleri ile 34 derece 14 dakika ve 35 derece 26 dakika doğu boylamları arasında yer alır.</p>
+                        <p>İlin yüzölçümü 5862 kilometre kare olup il bu yüz ölçümünle %0.8'ini kaplar. Batısı Kastamonu, güneyi Çorum, güneydoğusu Samsun illeri, kuzeyi ise Karadeniz ile çevrilidir. 475 km. uzunluğundaki sınırlarının 300 km'si kara, 175 km'si ise deniz kıyısıdır.</p>
+                        <p>Sinop'ta temel yapıyı paleozoik yaşlı başkalaşım kayaçları oluşturur. Sinop ili genellikle sismik bakımdan aktif bölgeler dışında kalır. Ancak Durağan ve Boyabat ilçeleri I. derece deprem bölgesine girer. Kuzey Anadolu kırık çizgisi üzerinde yer alan Sinop İli genel olarak 4. derece deprem bölgesindedir. İl alanı genellikle II. Jeolojik zaman'da oluşmuştur. Yarımada, volkanik yapılıdır. Sülük Gölü eski bir volkanik kütledir.</p>
+                        <p>Sinop, her zaman yağış aldığından zengin orman ve bitki örtüsüyle kaplıdır. Ormanlar hem zengin, hem de çeşitlidir. çam, köknar, meşe, gürgen, kayın, dişbudak, karaağaç ve kavak, başlıca ağaç türleridir. Ağaç denizi olarak nitelendirilen Çangal Ormanları, Ayancık, Türkeli ve Boyabat yörelerini kaplar. Dıranaz, Göktepe, Soğuksu ve Elekdağ Ormanları da hem önemli doğal güzellikler oluşturur, hem de ekonomik bakımdan büyük değer taşır.</p>
+                        <p>Sinop İli'nde güneye doğru gidildikçe iklim kuraklaşmaya başlar. Bu nedenle, bu kesimde kuzeydeki gür bitki örtüsünün yerini bozkır bitkileri alır.</p>
+                        <p>Sinop İli, Doğu ve Batı Karadeniz iklim özelliklerinin iç içe geçtiği bir yöredir. İlde mevsimler arası sıcaklık farkları pek büyük değildir. İl’de, yıl boyunca esen sürekli rüzgârlar etkili olmaktadır. Yazın belli bir dönem dışında, bütün yıl nemli ve yağışlı geçer. Sinop’un kuzey kesiminde Karadeniz iklim tipi egemendir. İlin güney kesiminde ise kıyıya koşut olarak uzanan dağlar nedeniyle, Karadeniz ikliminin etkisi giderek azalmaktadır. Bu bölgede yağışlar ve sıcaklık düşer ve bozkır ikliminin etkileri görülür. </p>
+<br>                    <br>
+                    </div>
+                </div>
+                <br>
+                <div class="yazılar">
+                    <div class="yazı">
+                        <br><br>
+                        <h2 id="kültür">Kültür</h2>
+                        <h6>Halk Oyunları</h6>
+                        <p>Yöre çalgıları davul, zurna, tef, bağlama, mızıka, tulumdur. Oyunlar karşılama türündedir. Yörede oynanan oyunlardan bazıları şunlardır: Ayancık Eymeleri, Ayancık Çiftetellisi, Muhtar, Karasu'da Pazar Var, Munise, Boyabat’ın Pirinci, Derelerde Kuşburnu, Boyabat Çiftetellisi, Gürcü Horonu ve Tütün’dür.</p>
+                
+                        <h6>Kıyafet</h6>
+                        <p>Yörede erkekler zıpka adı verilen paçaları dar, üzeri bol pantolon, üste yakasız gömlek giyerler. Gömlek üzerine salta adı verilen cepken giyilir.</p>
+                        <p>Kadınlar içlerine göynek giyerler. Göyneklerin yakası nakış ile süslenmiştir. Bazı yerlerde göyneklerin etek kısmı işlenmektedir. Göynek üzerine kurtlu, fındıklı ya da altıparmak adı verilen üçetek giyilir. Alta paça adı verilen, altı ketenden ya da bürümcükten, üstü amerikan bezinden yapılan, paça kısmı işlemeli, beli uçkur ile bağlanan don giyilir. Bele yün ya da pamuktan dokunmuş kuşak bağlanır. Bunların üzerine de öne önlük takılır. Kıyafeti başlık tamamlar. Ayancık ve köylerinde başa nezgep takılır. Bazı yerlerde başa fes takılır, onun üstüne yazma, kesmeli poğaça, iç kısımlarda çember örtülür. Genel olarak ise sarı yazma bağlanır.</p>
+                
+                        <h6>Gelenek</h6>
+                        <p>Helesa:Sinop’a özgü önemli bir gelenek olan “Helesa” bir diğer adı ile “Sellime Çıkma”, her Ramazan ayın on beşinci gününden sonra gerçekleştirilmektedir. Helesa geleneğinin ortaya çıkışıyla ilgili yazılı kaynaklarda bulunmayan ancak dilden dile aktarılarak günümüze kadar gelmiş bir söylence bulunmaktadır.</p>
+                        <p>Rivayete göre, gemilerin yelken ile çalıştığı çok eski zamanlarda bu gemilerin Karadeniz’de sığınacağı üç liman varmış. Bunlar Temmuz, Ağustos ayları ve Sinop’muş. Yani Karadeniz sadece Temmuz ve Ağustos aylarında fırtınasız olur, diğer zamanlarda da gemiler ancak Sinop limanında barınabilirmiş. Yine böyle fırtınalı bir kış gününde, yelkenli bir gemi fırtınaya yakalanmış ve Sinop limanına sığınmış. Haftalarca burada mahsur kalan gemide bulunan tayfaların zamanla kumanyası tükenmiş ve açlık baş göstermeye başlamış. Tayfalar dilenmek istemedikleri için de kimseden bir şey isteyememişler. Bir gün kaptanın aklına yiyecek bulmak için bir fikir gelmiş. Tayfalarına hemen bir filikayı süslemelerini söylemiş. Kaptan ve tayfalar süslenen bu filikayla ve gece olması sebebiyle ellerinde çok sayıda fenerle Sinop’a inmişler ve kent içerisinde çeşitli maniler söyleyerek dolaşıp halktan yiyecek istemişler. Bun gören halk da gemicilere çeşitli yiyecekler vermiş ve böylece gemiciler açlıktan kurtulmuşlar.</p>
+                        <p>Ramazan ayındaki yardımlaşmanın boyutlarını gösteren en güzel örneklerden biri olan Helesa, bu olay sonrasında Sinop’ta her Ramazan Ayında tekrarlanan bir gelenek halini almıştır. Geleneksel uygulamada, Helesa öncesinde rivayetteki filikayı temsilen birkaç kişinin taşıyacağı büyüklükte bir kayık alınır. Bu kayık güzelce süslenir ve çevresi fenerler ya da mumlarla ışıklandırılır. İftar yapılıp oruçlar açıldıktan sonra, bir araya gelen gençler süsledikleri bu kayığı bazen omuzlarında bazen ellerinde tutarak tüm mahalleleri gezerler. Kayık her evin önünde ev sahibi tarafından görülecek bir şekilde yere konulur. Bu evlerin kapısına gelen kalabalıktan sesi güzel olan bir kişi aşağıda bir bölümü yazılı olan Helesa manilerinden bir kaçını, diğer kişiler de nakarat kısmını söyler ve bahşiş isterler. Bahşişler bir mendile sarılarak ve düştüğü yer görülsün diye mendilin ucu yakılarak yere veya kayığın içerisine atılır. Toplanan tüm bahşişler de daha sonra ihtiyaç sahiplerine dağıtılır.</p>
+                        <img src="https://www.kulturportali.gov.tr/repoKulturPortali/small/31012013/250ce9aa-b9eb-49f3-8f51-22179825d7f6.JPG?format=jpg&quality=50" id="kckresim" alt="">
+                        <br><br>
+                        <p>Hıdırellez:Sinop'ta Hıdrellez’i kutlama geleneğinin oldukça uzun yıllara dayanan bir geçmişi olduğunu söylememiz mümkündür. Hıdrellez, yörede yazın başladığı ve tutulan dileklerin Hızır tarafından gerçekleştirildiği gün olarak kabul edilmekte, genellikle etrafında türbe veya yatır bulunduğuna inanılan ve Türbe Mevki (Yakadibi Köyü), Yenicuma Mevki (Taşmanlı ve Dizdaroğlu köyleri) gibi adları olan alanlarda, geniş katılımların olduğu etkinliklerle kutlanmaktadır. Hıdrellez’in 6 Mayıs’a denk gelen gün olduğu ve yakın bir döneme kadar bugünde kutlandığı söylenmesine rağmen, günümüzde kutlamaların genellikle 6 Mayıs’tan sonraki hafta sonuna denk gelen günlerde gerçekleştirildiği görülmektedir. Hıdrellez’in kutlandığı alanların büyük çoğunluğunda yatır, türbe, mezar diye adlandırılan genellikle kimin yattığı bilinmeyen ama halk arasında Hızır’ın yattığına inanılan kalıntı veya mezarlar vardır. Hıdrellez günü bu mezarların ziyaret edildiğini, ziyaret sırasında başındaki veya yanındaki ağaçlara çaput bağlanması, mezar taşlarına taş yapıştırılması, adanan hayvanların mezar başlarında kesilmesi gibi pek çok geleneksel uygulamanın da gerçekleştirildiğini görmekteyiz.</p>
+                        <p>Hıdrellez’in geleneğinde olan yardımlaşma, misafir ağırlama, birlikte eğlenme gibi pek çok unsuru bu şenliklerde gözlemlememiz mümkün olmaktadır. Bunun en belirgin göstergesi Hıdrellez kutlamalarının temel misafir yemeği olan keşkeğin hazırlanışı, pişirilişi ve dağıtılışı sırasında görülmektedir. Keşkek yörede tüm toplumsal uygulamalar da olduğu gibi Hıdrellez kutlamalarında da önemli bir yere sahiptir. Hıdrellez için köylerin büyük çoğunluğunda keşkeğin pişirilir ve börek, çörek gibi yiyecekler ile birlikte gelen misafirlere dağıtılır.</p>
+                        <p>Yörede Hıdrellez’le ilgili birçok geleneksel uygulama bulunmaktadır. Hıdrellez bir hafta önceden karşılanmaya başlamakta pis olan eve Hızır’ın uğramayacağı inancı ile evler tepeden tırnağa temizlenmektedir. Ayrıca Hıdrellez Günü giyilecek elbiselerin mutlaka temiz ve eğer mümkün ise yeni olmasına özen gösterilmektedir. Hıdrellez gününü de içine alan yedi gün süresince tarla, bağ ve bahçelerde çalışılmaması gerektiğine, özellikle Hıdrellez günü çalışılırsa başa bir felaket geleceğine inanılmaktadır. Hıdrellez gecesi yıkanılmaması gerektiğine, yıkanılırsa yüzde ve vücutta belirli lekeler çıkacağına inanılmaktadır. Hıdrellez’e özgü çıkarım adı verilen börekler bugünde yapılarak misafirlere dağıtılmaktadır. Hıdrellez’de türbe ziyaretleri sırasında isteklerinin kabul olması için adanan adaklar, isteklerin gerçekleşmesi durumunda bir sonraki Hıdrellez günü türbe başında kesilmektedir. Yörede Hıdrellez günü mutlaka olması gereken yiyeceklerden birisi kestanenin suda pişirilip 1-1,5 metrelik bir ipe dizilmesi ile hazırlanan ve dizin kestane ismi verilen yiyecektir. Hıdrellez sabahı namazdan önce demirden yapılmış bir aracın belirli bir zaman elle tutulması durumunda o gün yılan görülmeyeceğine inanılır. Hıdrellez’de yumurtalar boyanmakta ve yumurtalar tokuşturulmaktadır. Hıdrellez’de yaş ağaç kesilmemektedir. Hıdrellez’den bir gece önce süt ve maya ayrı kaplarda yan yana koyulur ve yatılır. Sabah süt yoğurt haline gelmişse Hızır’ın oraya uğradığına inanılır.</p>
+                        <img src="https://www.sinopflashaber.com/images/haberler/2024/05/turkeli-de-hidirellez-senligi-duzenlendi-4859.webp" id="kckresim" alt="">
+                        <br><br>
+                        <h6>El Sanatları</h6>
+                        <p>Mahrama:Eskiden havlu veya bel kuşağı olarak olarak kullanılmak üzere ince ve uzun bir şekilde (ortalama 45x100 cm) pamuk ipinden yapılan bir dokumadır. Durağan ve Boyabat ilçelerinde yaygın olarak yapılan bu dokumada diğer dokumalara göre daha sık iplik atılır ve örtünün iki ucuna yöresel motifler yerleştirilir.</p>
+                        <img src="https://www.kulturportali.gov.tr/repoKulturPortali/small/19092014/eafc7f7f-35e6-4bea-b1fd-c9c1e353e982.JPG?format=jpg&quality=50" id="kckresim" alt="">
+                        <br><br>
+                        <p>Peşkir:Geçmişte el yüz havlusu olarak işlev gören peşkirler, mahramayla aynı teknikte dokunmaktadır. Mahramadan farklı olarak daha ince olarak dokunan peşkirlerde işleme tekniği olarak, düz sarma, verev sarma, balık sırtı, düz pesent, verev pesent, gözeme ve civankaşı kullanılmıştır.</p>
+                        <img src="https://www.kulturportali.gov.tr/repoKulturPortali/small/19092014/8b48c7c5-6a5e-4f14-8772-ae07f9802a46.jpg?format=jpg&quality=50" id="kckresim" alt="">
+                        <br><br>
+                        <br>
+                    </div>
+                </div>
+                <br>
+                <div class="yazılar">
+                    <div class="yazı">
+                        <br><br>
+
+                        <h2 id="Yemek">Yemek</h2>
+                        <ul>
                     
-                </ul>
-            </div>
+                            <li>Sinop Mantısı</li>
+                            <img src="https://res.cloudinary.com/turna/image/upload/v1671646324/sinop_mant%C4%B1.jpg" id="kckresim"  alt="">
+                            <br>
+                            <br>
+        
+                            <li>Nokul</li>
+                            <img src="https://res.cloudinary.com/turna/images/f_auto,q_auto:low/v1671646325/sinop_nokul/sinop_nokul.jpg?_i=AA"id="kckresim"  alt="">
+                            <br><br>
+                            <li>Keşkek</li>
+                            <img src="https://res.cloudinary.com/turna/image/upload/v1671646325/sinop_ke%C5%9Fkek.jpg"id="kckresim"  alt="">
+                            <br><br>
+                            <li>Kaşık Çıkartması (Mamalika)</li>
+                            <img src="https://res.cloudinary.com/turna/image/upload/v1671646324/ka%C5%9F%C4%B1k_%C3%A7%C4%B1kartmas%C4%B1.jpg"id="kckresim"  alt="">
+                            <br><br>
+                            <li>Sirkeli Pırasa</li>
+                            <img src="https://res.cloudinary.com/turna/image/upload/v1671646325/sirkeli_p%C4%B1rasa.jpg" id="kckresim" alt="">
+                            <br><br>
+                        </ul>
+                        <br>
+                    </div>
+                </div>
+                <br>
+                <div class="yazılar">
+                    <div class="yazı">
+                        <br><br>
+                        <h2 id="Gezi">Gezilecek Yerler</h2>
+                        <br>
+                        <ul>
+                            <li><h6>Erfelek Tatlıca Şelaleleri Tabiat Parkı</h6></li>
+                            <p>Sinop'un Erfelek ilçesine bağlı Tatlıca köyü yakınlarındaki sıra şelalelerdir. Tatlıca irili ufaklı 28 ayrı şelale barındırmaktadır. Erfelek'e yaklaşık 10, Sinop'a ise 45 km uzaklıktadır. Erfelek Şelalesi, doğal bir şekilde oluşmuştur. Tarım ve Orman Bakanlığı tarafından 2011 senesinde tabiat parkı olarak ilan edilen bu şelaleler 720 dekarlık bir sahaya sahiptir.</p>
+                            <a href="https://www.kulturportali.gov.tr/turkiye/sinop/gezilecekyer/tatlica-selaleleri"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxxqv46OCIMKfSMuFQ-wt_g3E533m4PTFrtqKOTTfD3yZdec0dAw5qeGYdDg&s" id="kckresim" alt=""></a>
+                            <br><br>
+                            <li><h6>Hamsilos Koyu</h6></li>
+                            <p>Hamsilos Tabiat Parkı; Parka adını veren denizin bir nehir gibi kara içine girdiği Karadeniz’deki ria tipi kıyı oluşumunun en güzel örneklerinden biridir. 1.Derece doğal sit alanı olup Türkiye'nin 22'nci tabiat parkıdır. Hamsilos'a halk arasında Hamsoros da denilir. Sinop'a 11 km uzaklıktadır. Türkiye'nin en kuzey noktası İnceburun'a ise yaklaşık 10 km uzaklıktadır. Akliman koyunun 1 km kuzeyindedir.  </p>
+                            <a href="https://www.kulturportali.gov.tr/turkiye/sinop/gezilecekyer/hamsilos-tabiat-parki"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/a8/9b/d4/hamsilos-koyu.jpg?w=500&h=-1&s=1" id="kckresim" alt=""></a>
+                            <br><br>
+                            <li><h6>İnceburun Feneri</h6></li>
+                            <p>Şehir merkezine yaklaşık 19km uzaklıkta olup 1863 yılında inşa edilmiştir. Denizden yüksekliği 38 metre olan fener 12 metre yüksekliğe sahiptir. İnceburun Türkiye'nin en kuzey noktasıdır.</p>
+                            <a href="https://gezimanya.com/sinop/gezilecek-yerler/inceburun-deniz-feneri"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/a8/ba/a6/inceburun-feneri.jpg?w=500&h=-1&s=1" id="kckresim" alt=""></a>
+                            <br><br>
+                            <li><h6>Sinop Arkeoloji Müzesi</h6></li>
+                            <a href="https://www.kulturportali.gov.tr/turkiye/sinop/gezilecekyer/arkeoloji-muzesi818942"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/a9/06/78/zengin-arkeolojik-miras.jpg?w=500&h=-1&s=1" id="kckresim" alt=""></a>
+                            <br><br>
+                            <li><h6>Sinop Cezaevi</h6></li>
+                            <p>Yaklaşık 4000 yıl önce Sinop Kalesi yapılmıştır. Bu kalenin cezaevi olarak kullanımına ait en eski belgeler 1568 yılına dayanmaktadır ama iç kalenin resmi olarak zindana dönmesi 1887 yılında olmuştur.</p>
+                            <p>Bu kale hakkında  Evliya Çelebi seyahatnamesinde şöyle bahsetmiştir:
+                            <br><br>
+                            <p>"Büyük ve korkunç bir kaledir. 300 demir kapısı, dev gibi gardiyanları, kolları demir parmaklıklara bağlı ve her birinin bıyığından 10 adam asılır nice azılı mahkûmları vardır. Burçlarında gardiyanlar ejderha gibi dolaşır. Tanrı korusun, oradan mahkûm kaçırtmak değil, kuş bile uçurtmazlar."</p>
+                            <p>Sabahattin Ali ise “Duvar” adlı öyküsünde şu sözlerle anlatmıştır: <br>“Uzun zamanlar deniz kenarında ve surlar içindeki bir hapishanede kaldım. Kalın duvarlara vuran suların sesi taş oralarda çınlar ve uzak yolculuklara çağırırdı. Tüylerinden sular damlayarak surların arkasında yükseliveren deniz kuşları demir parmaklıklara hayretle gözlerini kırparak bakarlar ve hemen uzaklaşırlardı.”</p>
+                            <a href="https://www.kulturportali.gov.tr/turkiye/sinop/gezilecekyer/tarihi-cezaevi"> <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/63/18/23/eski-sinop-cezaevi.jpg?w=500&h=400&s=1" id="kckresim" alt=""></a>
+                            <br><br>
+                            <li>Boyabat Kalesi</h6></li>
+                            <p>Boyabat Kalesi, Sinop'un Boyabat ilçesinde yer alır. M.Ö. 7. yüzyılda Paflagonya'lılar tarafından yaptırılan kale, Roma, Bizans ve Osmanlı İmparatorluklarının izlerini taşımaktadır. Kaleye tırmanmak için bir kaya tünelinden toplam 252 merdiven var. Kalenin merdivenlerinin çoğu kırılmış ve çok diktir, kaleye tırmanmak isteyenler için heyecan verir.</p>
+                            <a href="https://www.kulturportali.gov.tr/turkiye/sinop/gezilecekyer/boyabat-kalesi"><img src="https://www.kulturportali.gov.tr/contents/images/17022013_0b905f6e-2093-4717-b69d-fcb00a6472f5.jpg" id="kckresim" alt=""></a>
+                            <br><br>
+                            <li><h6>İnaltı Mağarası</h6></li>
+                            <p>Ayancık İlçesi'ne 40 kilometre uzaklıkta bulunan İnaltı Köyü sınırları içerisinde olan mağara denizden 1070 metre yüksekliktedir. Mağaranın 50 metre altına kadar araçla ulaşım bulunmaktadır. Buradan da merdivenler aracılığıyla mağaranın ağzına ulaşılabilmektedir.</p>
+                            <p>MTA tarafından 1996 yılında inceleme yapılan İnaltı Mağarasının 300 metrelik bölümü aydınlatılmış olup turizme açılmıştır. Mağaranın devamındaki 358 metrelik kısmının ancak 125 metrelik bölümünün turizme açılmaya uygun olduğu tespit edilmiştir.</p>
+                            <p>Mağaranın yaşının 75 milyon olduğu yapılan arkeolojik çalışmalar ile ortaya çıkartılmıştır. Türkiye’nin en büyük on mağarası arasında yer almaktadır. </p>
+                            <a href="https://www.kulturportali.gov.tr/turkiye/sinop/gezilecekyer/nalti--magarasi"><img src="https://www.kulturportali.gov.tr/repoKulturPortali/small/24092014/db696a76-99a8-48dc-9892-fbdcdb8b5e24.JPG?format=jpg&quality=50" id="kckresim" alt=""></a>
+                            <br><br>
+                            <li><h6>Paşa Tabyaları</h6></li>
+                            <p>Yarımadanın doğusunda Karakum yolu üzerinde bulunan tabya, denizden gelebilecek tehlikelere karşı tersanenin emniyetin sağlamak ve limanda bulunan gemileri korumak amacıyla 19'uncu yüzyılda yapılmıştır. Yarım ay şeklindedir. Üstte 11 adet top yuvası bulunan yapının alt bölümünde, cephanelik ve koğuş olarak kullanılan büyük mekanlar ve mahzen vardır.</p>
+                            <a href="https://www.kulturportali.gov.tr/turkiye/sinop/gezilecekyer/pasa-tabyasi"><img src="https://www.kulturportali.gov.tr/repoKulturPortali/small/19022013/6cf2933a-3827-4612-b0d8-55079a2ac300.jpg?format=jpg&quality=50" id="kckresim" alt=""></a>
+                            <br><br>
+                            <li><h6>Bazalt Kayalıkları</h6></li>
+                            <p>Son yıllarda keşfedilen Bazalt Kayalıkları Boyabat’a 15 kilometre uzaklıkta Kurusaray Köyü civarındaki Fındıklık Mevkii'ndedir Birbirine yakın 3 vadide yer alan kayalıklar 30-40 metre yüksekliğinde olup 4-5-6 köşeli sütunlardan oluşmaktadır. Üstten bakıldığında çokgen görünümlü blok taşlar bir arı peteği şeklinde çokgen görünümlü, karşıdan bakıldığında ise yan yana dizilmiş ince uzun prizmal gövdeli blok taş yığını şeklindedir. Jeolojik oluşumu ile ilgili Maden Tetkik Araştırma Enstitüsü ve 9 Eylül Üniversitesi uzmanlarınca yapılan araştırma ve çalışmalar sonucunda genç döneme ait yaklaşık 3-5 milyon yıl yaşında olduğu sonucuna varılmıştır.</p>
+                            <a href="https://www.kulturportali.gov.tr/turkiye/sinop/gezilecekyer/bazalt-kayaliklari"><img src="https://www.kulturportali.gov.tr/repoKulturPortali/small/30092014/74c47711-c341-479d-a97b-41249f0a6b33.jpg?format=jpg&quality=50" id="kckresim" alt=""></a>
+                    
+                        </ul>
+                        <br>
+                    </div>
+                </div>
+                <br>
+                <br>
+            </div>   
+            <br>
+            <br> 
         </div>
+        <br>
+        <br>
     </body>
 </html>
