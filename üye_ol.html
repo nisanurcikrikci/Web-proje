@@ -30,6 +30,14 @@
                 margin-top: 1%;
                 margin-bottom: 1%;
             }
+            #şifreşartları li {
+                color: red;
+            }
+
+            #şifreşartları li.valid {
+                color: green;
+            }
+
         </style>
     </head>
 <body>
@@ -70,13 +78,18 @@
             <input type="email" name="email" required>
             <br>
             Kullanıcı Adı:<br>
-            <input type="text" name="username" required>
+            <input type="text" id="kullanıcıadı" name="kullanıcıadı" required>
             <br>
-            Şifre:<br>
-            <input type="password" name="password" required>
-            <br>
+            <label for="şifre1">Şifre:</label><br>
+            <input type="password" id="şifre1" name="şifre1" required>
+          
+            <ul id="şifreşartları">
+              <li id="Büyük harf">Büyük Harf</li>
+              <li id="Küçük harf">Küçük Harf</li>
+              <li id="Rakam">Rakam</li>
+            </ul>
             Şifre (Tekrar):<br>
-            <input type="password" name="password_confirm" required>
+            <input type="password" id="şifre2" required>
             <br><br>
             <input type="submit" value="Üye Ol">
             </form> 
@@ -84,37 +97,83 @@
         </div>
     </div>
     <script>
-       const form = document.querySelector('form');
+        const şifre1 = document.querySelector('#şifre1');
+        const şifreşartları = document.querySelectorAll('#şifreşartları li');
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
+        şifre1.addEventListener('input', () => 
+        {
+            const şifre = şifre1.value;
 
-  const password = document.querySelector('input[name="password"]').value;
-  const passwordConfirm = document.querySelector('input[name="password_confirm"]').value;
+            const büyükharf = /[A-Z]/.test(şifre);
+            const küçükharf = /[a-z]/.test(şifre);
+            const Rakam = /[0-9]/.test(şifre);
 
-  // Şifrelerin aynı olup olmadığını kontrol et
-  if (password !== passwordConfirm) {
-    alert('Şifreler aynı değil!');
-    return;
-  }
+            
+            şifreşartları[0].classList.toggle('valid', büyükharf);
+            şifreşartları[1].classList.toggle('valid', küçükharf);
+            şifreşartları[2].classList.toggle('valid', Rakam);
+        });
 
-  // Şifrenin geçerli olup olmadığını kontrol et
-  if (!validatePassword(password)) {
-    alert('Şifre geçerli değil!');
-    return;
-  }
+        const form=document.querySelector('form');
 
-  // Şifreler aynı ve geçerliyse formu gönder
-  form.submit();
-});
+        form.addEventListener('submit',(event)=>
+        {
+            event.preventDefault();
+            const şifre2=document.querySelector('#şifre2').value;
+            const şifre = document.querySelector('#şifre1').value;
 
-// Şifrenin geçerli olup olmadığını kontrol eden fonksiyon
-function validatePassword(password) {
-  const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$/;
-  return regex.test(password);
-}
+            if (şifre != şifre2) 
+            {
+                alert('Şifreler aynı değil!');
+                return;
+            }
 
+            if (!şifrekontrol(şifre)) {
+                 alert('Şifre geçerli değil!');
+                return;
+            }
+
+            form.submit();
+        
+            
+        });
+        function şifrekontrol(şifre) {
+                const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$/;
+                return regex.test(şifre);
+            }
+       
     </script>
 
 </body>
 </html> 
+
+
+<!--form.addEventListener('submit', (event) => 
+{
+    event.preventDefault();
+
+    const password = document.querySelector('input[name="password"]').value;
+    const passwordConfirm = document.querySelector('input[name="password_confirm"]').value;
+
+    // Şifrelerin aynı olup olmadığını kontrol et
+    if (password !== passwordConfirm) 
+    {
+        alert('Şifreler aynı değil!');
+        return;
+    }
+
+    // Şifrenin geçerli olup olmadığını kontrol et
+    if (!validatePassword(password)) {
+        alert('Şifre geçerli değil!');
+        return;
+    }
+
+    // Şifreler aynı ve geçerliyse formu gönder
+    form.submit();
+});
+
+// Şifrenin geçerli olup olmadığını kontrol eden fonksiyon
+function validatePassword(password) {
+    const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$/;
+    return regex.test(password);
+}->
