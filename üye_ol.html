@@ -72,8 +72,8 @@
         <div class="yazı">
             <br>
             <h2>Üye Olma Formu</h2>
-
-            <form action="uye_ol.php" method="post">
+        <div id="formkısmı">
+            <form @submit.prevent="submitForm" action="uye_ol.php" method="post">
             E-posta:<br>
             <input type="email" name="email" required>
             <br>
@@ -81,19 +81,21 @@
             <input type="text" id="kullanıcıadı" name="kullanıcıadı" required>
             <br>
             <label for="şifre1">Şifre:</label><br>
-            <input type="password" id="şifre1" name="şifre1" required>
+            <input type="password" v-model="şifre1" placeholder="password" id="şifre1" name="şifre1" required>
           
             <ul id="şifreşartları">
-              <li id="Büyük harf">Büyük Harf</li>
-              <li id="Küçük harf">Küçük Harf</li>
-              <li id="Rakam">Rakam</li>
+              <li :class="{ valid: büyükharf }" id="Büyük harf">En az 1 tane büyük harf gerekli</li>
+              <li :class="{ valid: küçükharf }">En az 1 tane küçük harf gerekli</li>
+              <li :class="{ valid: rakam }">En az 1 tane rakam gerekli</li>
             </ul>
             Şifre (Tekrar):<br>
-            <input type="password" id="şifre2" required>
+            <input type="password" v-model="şifre2" placeholder="Confirm Password" id="şifre2" required>
             <br><br>
             <input type="submit" value="Üye Ol">
+            <input type="submit" value="Üye ol(2)">
             </form> 
             <br>
+        </div>
         </div>
     </div>
     <script>
@@ -143,37 +145,44 @@
             }
        
     </script>
-
+    
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script>
+  new Vue({
+    el: '#formkısmı',
+    data: {
+      şifre1: '',
+      şifre2: ''
+    },
+    computed: {
+      büyükharf() {
+        return /[A-Z]/.test(this.şifre1);
+      },
+      küçükharf() {
+        return /[a-z]/.test(this.şifre1);
+      },
+      Rakam() {
+        return /[0-9]/.test(this.şifre1);
+      }
+    },
+    methods: {
+      submitForm() {
+        if (this.şifre1 !== this.şifre2) {
+          alert('Passwords do not match!');
+          return;
+        }
+        if (!this.isValidPassword()) {
+          alert('Password is not valid!');
+          return;
+        }
+        // Submit form logic here
+      },
+      isValidPassword() {
+        const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$/;
+        return regex.test(this.şifre1);
+      }
+    }
+  });
+</script>
 </body>
 </html> 
-
-
-<!--form.addEventListener('submit', (event) => 
-{
-    event.preventDefault();
-
-    const password = document.querySelector('input[name="password"]').value;
-    const passwordConfirm = document.querySelector('input[name="password_confirm"]').value;
-
-    // Şifrelerin aynı olup olmadığını kontrol et
-    if (password !== passwordConfirm) 
-    {
-        alert('Şifreler aynı değil!');
-        return;
-    }
-
-    // Şifrenin geçerli olup olmadığını kontrol et
-    if (!validatePassword(password)) {
-        alert('Şifre geçerli değil!');
-        return;
-    }
-
-    // Şifreler aynı ve geçerliyse formu gönder
-    form.submit();
-});
-
-// Şifrenin geçerli olup olmadığını kontrol eden fonksiyon
-function validatePassword(password) {
-    const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$/;
-    return regex.test(password);
-}->

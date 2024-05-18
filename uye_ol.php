@@ -17,28 +17,28 @@ if(isset($_POST['kullanıcıadı']) && isset($_POST['şifre1'])) {
                 
                 echo "Hoşgeldiniz \"$kullanıcısayıları\"";
                
-                // header("Location: welcome.php");
-                
+                header("Location: welcome.php");
+                exit;
             } else {
                 echo "Şifre yanlış";
-                //header("Location: üye_ol.html");
-               
+                header("Location: üye_ol.html");
+               exit;
             }
         } else {
             echo "Kullanıcı adı email formatında olmalı";
-           // header("Location: üye_ol.html");
-            
+           header("Location: üye_ol.html");
+            exit;
         }
     } else {
         echo "Kullanıcı adı ve şifre boş olamaz";
-        //header("Location: üye_ol.html");
-        
+        header("Location: üye_ol.html");
+        exit;
         
     }
 } else {
     echo "Kullanıcı adı ve şifre boş olamaz";
-    //header("Location: üye_ol.html");
-    
+    header("Location: üye_ol.html");
+    exit;
    
 }
 
