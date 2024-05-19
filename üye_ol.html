@@ -60,6 +60,12 @@
         .closebtn:hover {
             color: black;
         }
+        body{
+            background-image: url(https://png.pngtree.com/background/20230411/original/pngtree-website-code-color-illustration-background-picture-image_2387844.jpg);
+            background-size: cover;
+                background-repeat: 0;
+                background-attachment: fixed;
+        }
         </style>
     </head>
 <body>
@@ -105,13 +111,12 @@
             Kullanıcı Adı:<br>
             <input type="text" id="kullanıcıadı" name="kullanıcıadı" required>
             <br>
-            <input type="password" v-model="password" id="şifre1" placeholder="şifre" required>
+            <input type="password" v-model="password" id="şifre1" name="şifre1" placeholder="şifre" required>
             <input type="password" v-model="confirmPassword" id="şifre2" placeholder="şifreyi onayla" required>
             <ul id="şifreşartları">
-              <li :class="{ valid: büyükharf }" >En az bir büyük harf olmalı</li>
-              <li :class="{ valid: küçükharf }">En az bir küçük harf olmalı</li>
-              <li :class="{ valid: rakam }">En az bir rakam olmalı</li>
-              <li :class="{ valid: karakter }">En az 6 karakter olmalı</li>
+              <li :class="{ valid: harf }" >Bir harf olmalı</li>
+              <li :class="{ valid: rakam }">9 rakam olmalı</li>
+              <li :class="{ valid: karakter }">10 karakter olmalı</li>
             </ul>
             <button type="submit">Submit with Vue.js</button>
             <button @click.prevent="submitFormJS()">Submit with JavaScript</button>
@@ -122,62 +127,77 @@
         </div>
         </div>
     </div>
-    
+    <div id="mesaj"></div>
     <script>
-       document.addEventListener('DOMContentLoaded', function() {
-        const form = document.querySelector('form');
-        const şifre1 = document.querySelector('input[type="password"]');
-        const şifre2 = document.querySelectorAll('input[type="password"]')[1];
-        
-        const şifreşartları = document.querySelectorAll('#şifreşartları li');
+        new Vue({
+            el: '#app',
+            data: {
+                username: '',
+                password: '',
+                confirmPassword: ''
+            },
+            computed: {
+                hasLetter() {
+                    return /[A-Za-z]/.test(this.password);
+                },
+                hasNineDigits() {
+                    return (this.password.match(/\d/g) || []).length === 9;
+                },
+                hasMinLength() {
+                    return this.password.length >= 6;
+                }
+            },
+            methods: {
+                submitForm() {
+                    if (this.password !== this.confirmPassword) {
+                        alert('Passwords do not match!');
+                        return;
+                    }
+                    if (!this.hasLetter || !this.hasNineDigits || !this.hasMinLength) {
+                        alert('Şifre geçerli değil!');
+                        return;
+                    }
+                    alert('Form successfully submitted!');
+                    document.getElementById("form").submit();
+                },
+                submitFormJS() {
+                    const şifre = this.password;
+                    const onayşifre = this.confirmPassword;
 
-        şifre1.addEventListener('input', () => 
-        {
-            const şifre = şifre1.value;
+                    if (şifre !== onayşifre) {
+                        alert('Passwords do not match!');
+                        return;
+                    }
 
-            const büyükharf = /[A-Z]/.test(şifre);
-            const küçükharf = /[a-z]/.test(şifre);
-            const Rakam = /[0-9]/.test(şifre);
-            const karakter = /^.{6,}$/.test(şifre);
-
-            şifreşartları[0].classList.toggle('valid', büyükharf);
-            şifreşartları[1].classList.toggle('valid', küçükharf);
-            şifreşartları[2].classList.toggle('valid', Rakam);
-            şifreşartları[3].classList.toggle('valid', karakter);
+                    if (!this.şifrekontrol(şifre)) {
+                        alert('Şifre geçerli değil!');
+                        return;
+                    }
+                    document.getElementById("form").submit();
+                },
+                şifrekontrol(şifre) {
+                    const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$/;
+                    return regex.test(şifre);
+                },
+                clearFields() {
+                    this.username = '';
+                    this.password = '';
+                    this.confirmPassword = '';
+                }
+            }
         });
 
-        form.addEventListener('submit', function(event) {
-          event.preventDefault();
-          submitFormJS();
+        document.addEventListener("DOMContentLoaded", function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const message = urlParams.get('message');
+            if (message) {
+                alert(message);
+            }
         });
-    
-        function submitFormJS() {
-          const şifre = şifre1.value;
-          const onayşifre = şifre2.value;
-    
-          if (şifre !== onayşifre) {
-            alert('Passwords do not match!');
-            return;
-          }
-          
-          if (!şifrekontrol(şifre)) {
-                 alert('Şifre geçerli değil!');
-                return;
-            }
-            document.getElementById("form").submit();
-        }
-    
-        function şifrekontrol(şifre) {
-                const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$/;
-                return regex.test(şifre);
-            }
-    
-        
-      });
-      function clearFields() {
-          şifre2.value = '';
-          şifre1.value = '';
+
+        function clearFields() {
+            document.getElementById("form").reset();
         }
     </script>
 </body>
-</html> 
+</html>
