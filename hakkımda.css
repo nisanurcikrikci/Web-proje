@@ -1,0 +1,35 @@
+.navbar{
+    justify-content: center;
+ }
+ .navbar-nav .nav-link.active {
+      text-decoration: underline;
+ }
+ .navbar-nav .nav-link:hover {
+     color: rgb(0, 242, 255);
+ }
+ .slaytlar{
+     width: 60%;
+     height: 60%;
+     margin: auto;
+ }
+ 
+ body{
+     background-image: url(https://st3.depositphotos.com/6171310/37268/v/950/depositphotos_372688856-stock-illustration-beautiful-wallpaper-splash-watercolor-multicolor.jpg);
+     background-attachment: fixed;
+     background-repeat: 0;
+     background-size: cover;
+     color: rgb(0, 0, 0);
+ }
+ h1{
+     text-align: center;
+     font-size: 150pt;
+     color: rgb(0, 255, 38);
+     font-family:"Brush Script MT",cursive;
+ }
+ .bilgiler{
+     margin-top:6% ;
+     margin-left: 10%;
+     margin-right: 10%;
+     margin-bottom: 10%;
+     font-size: 20pt;
+ }

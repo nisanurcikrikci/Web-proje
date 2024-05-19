@@ -1,0 +1,46 @@
+.navbar{
+    justify-content: center;
+ }
+ .navbar-nav .nav-link.active {
+      text-decoration: underline;
+ }
+ .navbar-nav .nav-link:hover {
+     color: rgb(0, 242, 255);
+ }
+ .içerik{
+ margin-left: 30%;
+ margin-right: 30%;
+ margin-top: 10%;
+ background-color: rgba(172, 249, 255, 0.604);
+ font-size: 20pt;
+}
+img{
+display: block;
+margin: 0 auto;
+}
+h2{
+text-align: center;
+
+}
+h1{
+text-align: center;
+
+}
+img{
+height: 60%;
+width: 60%;
+ background-color: rgb(172, 249, 255);
+
+}
+label{
+text-align: center;
+}
+p{
+ font-size: 20pt;
+}
+body{
+ background-image: url(https://c.wallhere.com/photos/a1/8c/1920x1080_px_Fantasy_Town_landscape-1030987.jpg!d);
+ background-size: cover;
+     background-repeat: 0;
+     background-attachment: fixed;
+}
